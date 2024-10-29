@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT</title>
+    <link rel="stylesheet" href="stylestyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__img">
+            <img src="./img/hinh1.png" alt="FPT">
+        </div>
+    </header>
+    <nav>
+        <div class="nav__menu">
+            <ul>
+                <li><a href="./index.html"><span>T</span>RANG CHỦ</a></li>
+                <li><a href="./gioithieu.html"><SPAn>G</SPAn>IỚI THIỆU</a></li>
+                <li><a href="#"><span>L</span>IÊN HỆ</a>
+                    <ul class="nav__menu--child">
+                        <li><a href="#"><span>Đ</span>IỆN THOẠI</a></li>
+                        <li>
+                            <a href="./lienhe.html"><span>L</span>IÊN HỆ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>G</span>ÓP Ý</a></li>
+                <li><a href="#"><span>H</span>ỎI ĐÁP</a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside>
+        <section class="section__left">
+            <div class="section__left--content">
+                <div class="section__left--content--form">
+                    <h1>THÔNG TIN LIÊN HỆ</h1>
+                    <form name="frLienHe">
+                        <table>
+                            <tr>
+                                <td class="section__left--content--form--title">Mã sinh viên:</td>
+                                <td class="section__left--content--form--content"><input type="text"
+                                        placeholder="Nhập mã sinh viên" name="maSinhVien"></td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Họ và tên:</td>
+                                <td class="section__left--content--form--content"><input type="text"
+                                        placeholder="Nhập họ và tên" name="hoTen"></td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Năm sinh:</td>
+                                <td class="section__left--content--form--content"><input type="number"
+                                        placeholder="Nhập năm sinh" name="namSinh"></td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Giới tính:</td>
+                                <td class="section__left--content--form--radio"><input type="radio" name="gioiTinh"
+                                        value="Nam">Nam
+                                    &ensp;
+                                    <input type="radio" name="gioiTinh" value="Nữ">Nữ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Sở thích:</td>
+                                <td class="section__left--content--form--chebox"><input type="checkbox" name="soThich"
+                                        id="st" value="Đọc sách">Đọc sách
+                                    &ensp;
+                                    <input type="checkbox" name="soThich" id="st" value="Du lịch">Du lịch
+                                    &ensp;
+                                    <input type="checkbox" name="soThich" id="st" value="Âm nhạc">Âm nhạc
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Tỉnh:</td>
+                                <td class="section__left--content--form--content">
+                                    <select name="tinh">
+                                        <option value="chon" selected>Chọn</option>
+                                        <option value="Long An">Long An</option>
+                                        <option value="Tiền Giang">Tiền Giang</option>
+                                        <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--title">Nội dung:</td>
+                                <td class="section__left--content--form--content">
+                                    <textarea name="noiDung" placeholder="Nhập nội dung liên hệ"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="section__left--content--form--buttom" colspan="2">
+                                    <input type="button" value="Gửi thông tin" onclick="kiemTra()">
+                                    <input type="reset" value="Nhập lại">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <script src="main.js"></script>
+                    <div id="section__left--content--tTin">
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <section class="section__right">
+            <ul>
+                <li><a href="./sanpham.html">
+                        Máy tính xách tay
+                    </a></li>
+                <li><a href="./sanpham.html">Điện thoại di động</a></li>
+                <li><a href="./sanpham.html">Máy quay phim</a></li>
+                <li><a href="./sanpham.html">Máy chụp ảnh</a></li>
+            </ul>
+        </section>
+    </aside>
+    <footer>
+        <div class="footer__content">
+            <h4><span>FPT P</span>OLYTECHNIC &copy; 2017. <span>A</span>LL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+
+</html>
